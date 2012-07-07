@@ -20,7 +20,7 @@ import android.util.Log;
  * 
  * Last Edited by: Michael Morris (7.6.2012)
  * @author Michael Morris
- * @version 1.2.0
+ * @version 1.2.1
  *
  */
 public class MMMAnimation {
