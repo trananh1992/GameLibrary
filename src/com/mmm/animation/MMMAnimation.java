@@ -20,7 +20,7 @@ import android.util.Log;
  * 
  * Last Edited by: Michael Morris (7.6.2012)
  * @author Michael Morris
- * @version 1.3.1
+ * @version 1.3.2
  *
  */
 public class MMMAnimation {
@@ -38,7 +38,7 @@ public class MMMAnimation {
 	protected float y;
 	
 	/** The z location, here used as a "layer", of the MMMAnimation. **/
-	protected int zLayer;
+	protected float zLayer;
 	
 	/** The floating point scale used when rendering the animation. **/
 	protected float scale;
@@ -282,7 +282,7 @@ public class MMMAnimation {
 	 * @param the_y The new y location of this MMMAnimation.
 	 * @param the_layer The new layer for this MMMAnimation.
 	 */
-	public void setLocation(final float the_x, final float the_y, final int the_layer) {
+	public void setLocation(final float the_x, final float the_y, final float the_layer) {
 		x = the_x;
 		y = the_y;
 		zLayer = the_layer;		
@@ -305,7 +305,7 @@ public class MMMAnimation {
 	 * @param the_dy The delta y value.
 	 * @param the_layer_delta The layer delta.
 	 */
-	public void translate(final float the_dx, final float the_dy, final int the_layer_delta) {
+	public void translate(final float the_dx, final float the_dy, final float the_layer_delta) {
 		x += the_dx;
 		y += the_dy;
 		zLayer += the_layer_delta;
@@ -331,7 +331,7 @@ public class MMMAnimation {
 	 * Retrieve this MMMAnimations layer value, aka z value.
 	 * @return The layer (z) location.
 	 */
-	public int getZ() {
+	public float getZ() {
 		return getLayer(); 
 	}
 	
@@ -339,7 +339,7 @@ public class MMMAnimation {
 	 * Retrieve this MMMAnimation z value, aka layer.
 	 * @return The z (layer) location.
 	 */
-	public int getLayer() {
+	public float getLayer() {
 		return zLayer;
 	}
 	
