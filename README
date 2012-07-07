@@ -1,0 +1,9 @@
+GameLibrary is a small collection of common files used in the creation process for 2D Android applications.
+-----------------------------------------------------------------------------------------------------------
+MMMAnimation -
+     MMMAnimation is a sprite map animation class. A sprite map is specified, along with how many rows/cols it contains. Phases, or sub animations, are created which allow for multiple animations to be created from one sprite map. For instance, a sprite map contains all frames of a characters walking animation (for each direction) can be specified, creating a phase for "walk_left", "walk_right", "walk_down", etc. Further, rotation, coloration, scale, and start/stop features are built in.
+
+MMMImage -
+     A subclass of MMMAnimation, these ONE FRAME animations are designed to be static images, while retaining scaling, rotation, and tinting functionality. To create an MMMImage is far simpler than an MMMAnimation, a context and resource ID are required. A single phase (aptly named "phase") is created and started automatically. Simply, an MMMImage is a 1 frame, 1 phase, animation which mimics a static image.
+
+More to come on GameEngine classes....
