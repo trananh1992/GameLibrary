@@ -43,9 +43,9 @@ import java.util.TreeMap;
  * 
  * All done!
  * 
- * Last Edited by: Michael Morris (7.6.2012)
+ * Last Edited by: Michael Morris (7.8.2012)
  * @author Michael Morris
- * @version 1.0.0
+ * @version 1.0.1
  *
  */
 public final class GameEngine {
@@ -159,7 +159,7 @@ public final class GameEngine {
 	 */
 	public final boolean initAllStates() {
 		
-		boolean ok = false;
+		boolean ok = true;
 		
 		for (GameState state : game_states.values()) {
 			ok = state.init() && ok;
