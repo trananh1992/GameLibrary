@@ -12,9 +12,9 @@ import android.graphics.Rect;
  * The phase creation and frame setup are taken care of for you while you
  * use MMMImage for static images.
  * 
- * Last Edited by: Michael Morris (7.6.2012)
+ * Last Edited by: Michael Morris (7.8.2012)
  * @author Michael Morris
- * @version 1.2.0
+ * @version 1.2.1
  *
  */
 public class MMMImage extends MMMAnimation {
@@ -49,7 +49,7 @@ public class MMMImage extends MMMAnimation {
 	 * @param y The desired y location.
 	 * @param layer The desired z (layer) location.
 	 */
-	public MMMImage(Context c, final int resource_id, final float x, final float y, final int layer) {
+	public MMMImage(Context c, final int resource_id, final float x, final float y, final float layer) {
 		
 		super(x, y, layer);
 		

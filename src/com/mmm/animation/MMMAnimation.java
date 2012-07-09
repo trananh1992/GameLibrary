@@ -20,7 +20,7 @@ import android.util.Log;
  * 
  * Last Edited by: Michael Morris (7.6.2012)
  * @author Michael Morris
- * @version 1.3.3
+ * @version 1.3.4
  *
  */
 public class MMMAnimation {
@@ -87,7 +87,7 @@ public class MMMAnimation {
 	 * @param the_y
 	 * @param the_layer
 	 */
-	public MMMAnimation(final float the_x, final float the_y, final int the_layer) {
+	public MMMAnimation(final float the_x, final float the_y, final float the_layer) {
 		x = the_x;
 		y = the_y;
 		zLayer = the_layer;
