@@ -20,7 +20,7 @@ import android.util.Log;
  * 
  * Last Edited by: Michael Morris (7.6.2012)
  * @author Michael Morris
- * @version 1.3.3
+ * @version 1.3.4
  *
  */
 public class MMMAnimation {
@@ -471,64 +471,6 @@ public class MMMAnimation {
 		
 		draw(c, x, y, zLayer, 1.0f);
 		
-		/*
-		
-		// If the sprite sheet has not been loaded or no phases have been defined do not draw anything.
-		if (bmp == null || phases.size() == 0 || current_phase == null) {
-			Log.i("StickmanPaintball", "MMMAnimation.draw -- bmp:" + (bmp != null) + ", phases:" + phases.size() + ", current_phase:" + (current_phase != null));
-			return;
-		}
-			
-		
-		// First get the correct, current, sprite frame number.
-		int frame_num = current_phase.getFrameNumber();
-		
-		*/
-		/*
-		 * Frames are laid out in a sprite sheet from left to right, then top to bottom.
-		 * Example:
-		 *  ___ ___ ___ ___
-		 * |_0_|_1_|_2_|_3_|
-		 * |_4_|_5_|_6_|_7_|
-		 * |_8_|_9_|10_|11_|
-		 * 
-		 */
-		/*
-		// Calculate width and height of sprites.
-		final int sprite_width = bmp.getWidth() / num_sprites_x;
-		final int sprite_height = bmp.getHeight() / num_sprites_y;
-		
-		// Calculate the actual location (sprite location) of required frame.
-		final int sprite_row = frame_num / num_sprites_x;
-		final int sprite_col = frame_num % num_sprites_x;
-		
-		// Setup a source rectangle to achieve a cutout of the required frame.
-		Rect src = new Rect();
-		
-		src.top = sprite_height * sprite_row;
-		src.left = sprite_width * sprite_col;
-		src.bottom = src.top + sprite_height;
-		src.right = src.left + sprite_width;
-		
-		// Setup a destination rectangle to transfer the frame to the correct location on screen.		
-		Rect dst = new Rect();
-		
-		dst.top = (int)y; //- (int)(0.5f * (sprite_height * scale)) ;
-		dst.left = (int)x;//- (int)(0.5f * (sprite_width * scale));
-		dst.right = (int)x + Math.round(sprite_width * scale);
-		dst.bottom = (int)y + Math.round(sprite_height * scale);
-		
-		Paint p = getUsablePaint();
-		
-		// Rotation should happen to canvas matrix before any calls to darw.
-		c.rotate(rotation_angle_degrees, dst.left + (sprite_width * scale * .5f), dst.top + (sprite_height * scale * .5f));// + (float)((bmp.getWidth() * scale) / 2.0), y + (float)((bmp.getHeight() * scale) / 2.0));
-		
-		c.drawBitmap(bmp, src, dst, p);
-		
-		
-		//if (rotation_angle_degrees != 0)
-		c.rotate(-rotation_angle_degrees, dst.left + (sprite_width * scale * .5f), dst.top + (sprite_height * scale * .5f));
-		*/
 	}
 	
 	/**
